@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Jouw Fitness Website</h1>
+        <h1>Fat Class</h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,7 +20,7 @@
     </header>
     
     <section id="home" class="hero">
-        <h2>Welkom bij Jouw Fitness</h2>
+        <h2>Welkom bij Fat Class</h2>
         <p>Verander je leven met functionele training.</p>
         <button onclick="scrollToSection('trainingen')">Ontdek onze trainingen</button>
     </section>
@@ -40,3 +40,57 @@
     </footer>
 </body>
 </html>
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header en navigatie */
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero sectie */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+button {
+    background-color: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
