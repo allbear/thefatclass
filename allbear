@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F45 Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jouw Fitness Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trainingen">Trainingen</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <h2>Welkom bij Jouw Fitness</h2>
+        <p>Verander je leven met functionele training.</p>
+        <button onclick="scrollToSection('trainingen')">Ontdek onze trainingen</button>
+    </section>
+    
+    <section id="trainingen">
+        <h2>Onze Trainingen</h2>
+        <p>Hier kun je informatie over je lessen toevoegen.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Neem contact met ons op voor meer informatie.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Jouw Fitness. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>
